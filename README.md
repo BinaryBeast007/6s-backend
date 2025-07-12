@@ -61,6 +61,10 @@
 
 EcommerceAPI is a backend service designed for an e-commerce system, enabling the management of products and categories. It supports CRUD operations for products and categories, with features like unique product code generation, category validation, and price filtering with discounts. The application is built with a focus on scalability, security, and maintainability, using NestJS and MongoDB, and is fully containerized with Docker for easy deployment.
 
+#### Database Diagram
+
+<img src="assets/6s-diagram.png" width="450px" />
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
