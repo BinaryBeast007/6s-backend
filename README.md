@@ -1,98 +1,209 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+<a id="readme-top"></a>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<!-- PROJECT SHIELDS -->
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![project_license][license-shield]][license-url]
 
-## Description
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/BinaryBeast007/6s-backend">
+    <img src="https://img.icons8.com/fluency/96/shopping-cart.png" alt="Logo" width="80" height="80">
+  </a>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<h3 align="center">EcommerceAPI</h3>
 
-## Project setup
+  <p align="center">
+    A backend API for managing products and categories in an e-commerce system, built with NestJS and MongoDB.
+    <br />
+    <a href="https://github.com/BinaryBeast007/6s-backend"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/BinaryBeast007/6s-backend">View Demo</a>
+    ·
+    <a href="https://github.com/BinaryBeast007/6s-backend/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/BinaryBeast007/6s-backend/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+EcommerceAPI is a backend service designed for an e-commerce system, enabling the management of products and categories. It supports CRUD operations for products and categories, with features like unique product code generation, category validation, and price filtering with discounts. The application is built with a focus on scalability, security, and maintainability, using NestJS and MongoDB, and is fully containerized with Docker for easy deployment.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+- [![NodeJS][NodeJS]][NodeJS-url]
+- [![NestJS][NestJS]][NestJS-url]
+- [![MongoDB][MongoDB]][MongoDB-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To get a local copy of the project up and running, follow these steps. This guide will help you set up the environment for **EcommerceAPI** using Docker or a local development setup.
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Node.js** (Recommended version: >= 20.x LTS)
+  - Install from: [Node.js][NodeJS-url]
+- **npm** (Node package manager)
+  - Verify with: `npm -v`
+- **MongoDB** (for local development without Docker)
+  - Install from: [MongoDB][MongoDB-url]
+
+### Installation
+
+#### Local Development Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/BinaryBeast007/6s-backend.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd 6s-backend
+   ```
+3. Install NPM packages:
+   ```sh
+   npm install
+   ```
+4. Ensure MongoDB is running locally on `mongodb://localhost:27017/6s`.
+
+5. Start the development server:
+   ```sh
+   npm run start:dev
+   ```
+6. The application will be available at `http://localhost:3000`.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+The **EcommerceAPI** provides endpoints for managing products and categories. Below are the primary endpoints:
+
+- **Categories**:
+  - `POST /categories`: Create a new category.
+  - `GET /categories`: Retrieve all categories.
+  - `GET /categories/:id`: Retrieve a category by ID.
+
+- **Products**:
+  - `POST /products`: Create a product with a valid category.
+  - `PATCH /products/:id`: Update product details (description, discount, status).
+  - `GET /products`: Retrieve products with optional filters (`?category=<category_name>&name=<search_term>`).
+  - `GET /products/:id`: Retrieve a product by ID.
+
+**Example Request** (Create a Product):
 ```bash
-$ npm install
+curl -X POST http://localhost:3000/products \
+-H "Content-Type: application/json" \
+-d '{ "name": "Wireless Mouse", "description": "A high-precision wireless mouse with ergonomic design.", "price": 29.99, "discount": 0, "image_url": "https://example.com/images/wireless-mouse.jpg", "status": "in_stock", "category": "electronics" }'
 ```
 
-## Compile and run the project
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+**Example Response**:
+```json
+{
+  "_id": "507f191e810c19729de860ea",
+  "name": "Wireless Mouse",
+  "description": "A high-precision wireless mouse with ergonomic design.",
+  "price": 29.99,
+  "discount": 0,
+  "image_url": "https://example.com/images/wireless-mouse.jpg",
+  "status": "in_stock",
+  "category": "electronics"
+  "__v": 0
+}
 ```
 
-## Run tests
 
-```bash
-# unit tests
-$ npm run test
 
-# e2e tests
-$ npm run test:e2e
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# test coverage
-$ npm run test:cov
-```
+<!-- CONTRIBUTING -->
 
-## Deployment
+## Contributing
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+Contributions are welcome to enhance **EcommerceAPI**. To contribute:
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+1. Fork the Project.
+2. Create your Feature Branch (`git checkout -b feat/AmazingFeature`).
+3. Commit your Changes using Conventional Commits (`git commit -m 'feat: add AmazingFeature'`).
+4. Push to the Branch (`git push origin feat/AmazingFeature`).
+5. Open a Pull Request.
 
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+### Top contributors:
 
-## Resources
+<a href="https://github.com/BinaryBeast007/6s-backend/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=BinaryBeast007/6s-backend" alt="contrib.rocks image" />
+</a>
 
-Check out a few resources that may come in handy when working with NestJS:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+<!-- LICENSE -->
 
 ## License
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+Distributed under the MIT License. See [License][License-url] for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/BinaryBeast007/6s-backend.svg?style=for-the-badge
+[contributors-url]: https://github.com/BinaryBeast007/6s-backend/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/BinaryBeast007/6s-backend.svg?style=for-the-badge
+[forks-url]: https://github.com/BinaryBeast007/6s-backend/network/members
+[stars-shield]: https://img.shields.io/github/stars/BinaryBeast007/6s-backend.svg?style=for-the-badge
+[stars-url]: https://github.com/BinaryBeast007/6s-backend/stargazers
+[issues-shield]: https://img.shields.io/github/issues/BinaryBeast007/6s-backend.svg?style=for-the-badge
+[issues-url]: https://github.com/BinaryBeast007/6s-backend/issues
+[license-shield]: https://img.shields.io/github/license/BinaryBeast007/6s-backend.svg?style=for-the-badge
+[license-url]: https://github.com/BinaryBeast007/6s-backend/blob/main/LICENSE
+[NodeJS-url]: https://nodejs.org/
+[NodeJS]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
+[NestJS-url]: https://nestjs.com/
+[NestJS]: https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white
+[MongoDB-url]: https://www.mongodb.com/
+[MongoDB]: https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white
+[Docker-url]: https://www.docker.com/
+[Docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+[License-url]: https://github.com/BinaryBeast007/6s-backend/blob/main/LICENSE
