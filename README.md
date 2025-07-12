@@ -68,6 +68,7 @@ EcommerceAPI is a backend service designed for an e-commerce system, enabling th
 - [![NodeJS][NodeJS]][NodeJS-url]
 - [![NestJS][NestJS]][NestJS-url]
 - [![MongoDB][MongoDB]][MongoDB-url]
+- [![Docker][Docker]][Docker-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +91,26 @@ Before you begin, ensure you have the following installed:
 
 ### Installation
 
-#### Local Development Setup
+#### Option 1: Dockerized Setup (Recommended)
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/BinaryBeast007/6s-backend.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd 6s-backend
+   ```
+3. Build and start the application and MongoDB using Docker Compose:
+   ```sh
+   docker-compose up --build
+   ```
+4. The application will be available at `http://localhost:3000`.
+5. To stop the services:
+   ```sh
+   docker-compose down
+   ```
+
+#### Option 2: Local Development Setup
 1. Clone the repository:
    ```sh
    git clone https://github.com/BinaryBeast007/6s-backend.git
@@ -103,13 +123,18 @@ Before you begin, ensure you have the following installed:
    ```sh
    npm install
    ```
-4. Ensure MongoDB is running locally on `mongodb://localhost:27017/6s`.
+4. Set up environment variables: Create a .env file in the root directory of the project and add the following configuration:
+   ```sh
+   MONGO_URI=mongodb://mongo:27017/6s
+   ```
+   
+6. Ensure MongoDB is running locally on `mongodb://localhost:27017/6s`.
 
-5. Start the development server:
+7. Start the development server:
    ```sh
    npm run start:dev
    ```
-6. The application will be available at `http://localhost:3000`.
+8. The application will be available at `http://localhost:3000`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
